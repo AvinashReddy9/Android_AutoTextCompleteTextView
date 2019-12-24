@@ -15,12 +15,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        String[] array = {"Google", "Facebook","LinkedIn", "Telsa", "Lucid", "Mediation"};
-        textView = (AutoCompleteTextView)findViewById(R.id.textView);
-        textView.setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,array));
-         textView.setThreshold(1);
-         textView.setTextColor(Color.RED);
+        String[] array = {"Google", "Facebook", "LinkedIn", "Telsa", "Lucid", "Mediation"};
+        textView = (AutoCompleteTextView) findViewById(R.id.textView);
+        textView.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, array));
+        textView.setThreshold(1);
+        textView.setTextColor(Color.RED);
     }
-
-
 }
